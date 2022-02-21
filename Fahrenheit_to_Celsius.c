@@ -1,10 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int F;
-    float C;
-    scanf("%d",&F);
-    C=(float)(F-32)*5/9;
-    printf("%.2f",C);
+    int n;
+    scanf("%d",&n);
+    printf("%.2f",(n-32)/1.8);
     return 0;
 }
