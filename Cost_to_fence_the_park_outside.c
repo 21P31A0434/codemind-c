@@ -1,17 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int l,b,w,c,a,g;
-    scanf("%d%d%d%d",&l,&b,&w,&c);
-    if((l>=2*w) && (b>=2*w))
-    {
-    printf("Impossible");
-    }
+    int l,b,w,c,l1,b1,f;
+    scanf("%d %d %d %d",&l,&b,&w,&c);
+    l1=l+2*w;
+    b1=b+2*w;
+    f=((l1*b1)-(l*b))*c;
+    if(l1<=0 || b1<=0)
+       printf("impossible");
     else
-    {
-    a=((l+2*w)*(b+2*w))-(l*b);
-    g=a*c;
-    printf("%d",g);
-    }
-    return 0;
+       printf("%d",f);
 }
